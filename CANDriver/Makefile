@@ -1,7 +1,7 @@
 obj-m += CANDriver.o
 
 all:
-	$(CC) $(CFLAGS) $(LDFLAGS) $< -o $@
+	$(CC) $(CFLAGS) $(LDFLAGS) M=$(PWD) module
 
 clean:
-	$(CC) $(CFLAGS) $(LDFLAGS) $< -o $@
+	$(CC) $(CFLAGS) $(LDFLAGS) M=$(PWD) clean
