@@ -20,6 +20,24 @@ MMC0_CLK   - 0x44E10900
 UART0_CTSN - 0x44E10968
 UART1_RXD  - 0x44E10980
 
+ETH:
+gmii_sel - 0x44E10650 = 0x49 - 0xF1
+
+CM_WKUP Base Register = 0x44E00400
+Processor clock divider registers:
+CM_CLKSEL_DPLL_MPU - 0x44E0042C = 0x25818
+CM_DIV_M2_DPLL_MPU - 0x44E004A8 = 0x201
+
+ETH:
+CPSW_SS Base Register = 0x4A100000
+CPSW_PORT Base Register = 0x4A100100
+MDIO Base Register = 0x4A101000
+CPSW_WR Base Register = 0x4A101200
+
+
+
+
+DCAN:
 DCAN0 Base Register = 0x481CC000
 DCAN0_CTL  - 0x481CC000
 
